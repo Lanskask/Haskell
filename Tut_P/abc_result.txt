@@ -1,0 +1,1 @@
+"Welcome to Tutorialspoint. Here, you will get the best resource to learn Haskell."WRITEN

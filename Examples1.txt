@@ -1,0 +1,64 @@
+let max5 x = max 5 x
+let max5' = max 5 
+
+let discount limit proc sum = if sum >= limit then sum * (100 - proc) / 100 else sum
+
+let discount_1000Lim_5Proc = discount 1000 5
+Prelude> discount_1000Lim_5Proc 10000
+9500.0
+Prelude> discount_1000Lim_5Proc 100
+100.0
+
+
+max 5 6
+5 `max` 6
+
+5 + 6
+(+) 5 6
+
+
+infixl 8 ^, `logBase`
+infixl 7 *, /, `div`, `mod`
+infixl 6 +, -
+infix 4 ==, /=, >, >=, <, <=
+
+
+let x = 3 :: Int
+let y = 4 :: Double
+:type 5
+:t 5
+
+not Fslse
+
+------
+module Demo where
+
+import Data.Char
+
+---------
+
+Кортежи
+
+(2, True)
+(2,True)
+Prelude Data.Char> (2, True, 'a')
+(2,True,'a')
+Prelude Data.Char> :t (2, True, 'a')
+(2, True, 'a') :: Num t => (t, Bool, Char)
+
+Списки
+
+[1,2,3]
+[True, False]
+
+
+----------
+
+(?) :: Bool -> (a, a) -> a
+True ? (f, _) = f
+False ? (_, s) = s
+
+
+
+
+
